@@ -12,7 +12,7 @@ import css from 'Container.module.css';
 
 export const App = () => {
   return (
-    <div className={css.container}>
+    <section className={css.containerStyle}>
       <Profile
         stats={user.stats}
         username={user.username}
@@ -26,6 +26,6 @@ export const App = () => {
       <FriendList friends={friends} />
 
       <TransactionHistory items={transaction} />
-    </div>
+    </section>
   );
 };
